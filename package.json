@@ -1,0 +1,26 @@
+{
+  "name": "search",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ceccun/search.git",
+  "author": "Ejaz Ali <ejazali4@protonmail.ch>",
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/cors": "^8.2.1",
+    "@prisma/client": "^4.12.0",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.15.0",
+    "html-entities": "^2.3.3",
+    "node-html-parser": "^6.1.5"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "prettier": "2.8.7",
+    "prisma": "^4.12.0",
+    "tsc": "^2.0.4",
+    "typescript": "^5.0.3"
+  },
+  "scripts": {
+    "start": "tsc && node dist/index.js"
+  }
+}

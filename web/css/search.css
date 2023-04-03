@@ -1,0 +1,117 @@
+.outerHeader {
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: solid 1px var(--button-color-gray);
+	position: sticky;
+	top: 0;
+	background-color: var(--body-color-light);
+	backdrop-filter: blur(10px);
+}
+
+.header {
+	width: calc(100% - 200px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.header > .ls {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	width: 100%;
+	flex-direction: column;
+}
+
+.header > .ls > .ts {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-direction: row;
+	gap: 25px;
+	width: 100%;
+}
+
+.searchLogo {
+	height: 48px;
+	display: block;
+}
+
+.container {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	justify-content: start;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container > .content {
+	width: calc(100% - 200px);
+}
+
+.card {
+	width: 670px;
+	max-width: 100%;
+	box-sizing: border-box;
+	border-radius: var(--button-radius);
+	border: solid 1px var(--button-color-gray);
+	padding: 10px;
+}
+
+.results {
+	display: flex;
+	justify-content: start;
+	/* align-items: center; */
+	flex-direction: column;
+	gap: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: var(--button-color);
+}
+
+a > h3 {
+	color: var(--button-color);
+}
+
+a:visited > h3 {
+	color: var(--button-color-visited);
+}
+
+#noJSmessage {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: var(--modal-color);
+}
+
+#noJSmessage .modal {
+	background-color: var(--modal-background);
+	border-radius: 16px;
+	padding: 20px;
+	width: 600px;
+	height: auto;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: start;
+	align-items: center;
+}
+
+#noJSmessage:target {
+	display: block;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceccun Search</title>
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/search.css">
+</head>
+<body>
+    <div class="outerHeader">
+        <div class="header">
+            <div class="ls">
+                <div class="ts">
+                    <a href="/"><img src="https://ceccun.com/images/logo-15.svg" class="icon searchLogo" alt=""></a>
+                    <div class="searchInput">
+                        <input type="search" placeholder="Search" id="searchBox">
+                    </div>
+                    <script>
+                        var q = new URL(window.location).searchParams.get("q");
+                        if (q) {
+                            document.getElementById("searchBox").value = q;
+                        }
+                    </script>
+                </div>
+                <div class="bs"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div class="results">
+                <noscript>
+                    <div class="card">
+                        <h3>Sorry, that didn't work.</h3>
+                        <p>You somehow ended up on this page, despite <b>Javascript</b> being disabled.</p>
+                        <a href="#noJSmessage">Learn more</a>
+                    </div>
+                </noscript>
+            </div>
+        </div>
+    </div>
+
+    <div id="noJSmessage">
+        <div class="modal">
+            <h2>Ceccun relies on Javascript</h2>
+            <p>Javascript allows Ceccun to build interactive experiences and efficient single-page apps that work perfectly in your web browser.</p>
+            <p>In some web browsers, Javascript is disabled which means that Ceccun needs to fallback to using old and outdated solutions for critical services.</p>
+            <p>You should turn on Javascript or switch to another browser to get the best experience.</p>
+            <p>All of Ceccun's vital services, including search, will have a Javascript-free version available.</p>
+            <a href="#"><button>Dismiss</button></a>
+        </div>
+    </div>
+
+    <script src="/js/search.js"></script>
+</body>
+</html>

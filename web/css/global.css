@@ -1,0 +1,124 @@
+:root {
+	--big-font: "Manrope";
+	--normal-font: "Manrope";
+	--body-color: rgba(255, 255, 255, 1);
+	--modal-background: rgba(0, 0, 0, 0.04);
+	--modal-color: rgba(255, 255, 255, 1);
+	--text-color: rgba(0, 0, 0, 1);
+	--body-color-light: rgba(255, 255, 255, 0.8);
+	--button-color-gray: rgba(0, 0, 0, 0.116);
+	--button-color-gray-hov: rgba(0, 0, 0, 0.226);
+	--loading-color: rgba(0, 0, 0, 0.1);
+	--button-color: rgb(52, 147, 255);
+	--button-color-visited: rgb(194, 50, 170);
+	--button-color-hov: rgb(12, 115, 233);
+	--button-text-color: rgba(255, 255, 255, 1);
+	--button-unavailable: rgba(0, 0, 0, 0.274);
+	--skel-color: rgba(0, 0, 0, 0.068);
+	--error-color: rgb(255, 44, 44);
+	--button-radius: 5px;
+	--app-color-modals: rgba(255, 255, 255, 1);
+	--app-color-borders: rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--big-font: "Manrope";
+		--normal-font: "Manrope";
+		--body-color: rgb(18, 18, 18);
+		--modal-background: rgba(0, 0, 0, 1);
+		--modal-color: rgba(255, 255, 255, 0.1);
+		--text-color: rgba(255, 255, 255, 1);
+		--body-color-light: rgba(18, 18, 18, 0.8);
+		--button-color-gray: rgba(255, 255, 255, 0.116);
+		--button-color-gray-hov: rgba(255, 255, 255, 0.226);
+		--loading-color: rgba(255, 255, 255, 0.1);
+		--button-color: rgb(138, 180, 248);
+		--button-color-visited: rgb(139, 71, 179);
+		--button-color-hov: rgb(12, 115, 233);
+		--button-text-color: rgba(255, 255, 255, 1);
+		--button-unavailable: rgba(0, 0, 0, 0.274);
+		--skel-color: rgba(255, 255, 255, 0.068);
+		--error-color: rgb(255, 44, 44);
+		--button-radius: 5px;
+		--app-color-modals: rgba(255, 255, 255, 1);
+		--app-color-borders: rgba(255, 255, 255, 0.1);
+		--invert-icon: invert();
+	}
+}
+
+@font-face {
+	font-family: "Manrope";
+	src: url("https://ceccun.com/fonts/Manrope.woff2") format("woff2");
+}
+
+body {
+	margin: 0;
+	background-color: var(--body-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--big-font), sans-serif;
+	font-weight: 700;
+	color: var(--text-color);
+}
+p,
+span,
+li,
+input,
+div,
+button {
+	font-family: var(--normal-font), sans-serif;
+	color: var(--text-color);
+}
+
+.onePage {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 100vh;
+}
+
+.icon {
+	filter: var(--invert-icon);
+}
+
+.searchInput {
+	display: flex;
+	justify-content: space-between;
+	width: 600px;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+.searchInput > input {
+	width: 100%;
+	border: none;
+	border-radius: var(--button-radius);
+	padding: 10px;
+	background-color: var(--button-color-gray);
+	color: var(--text-color);
+	outline: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+button {
+	border: none;
+	border-radius: 30px;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: var(--button-color-hov);
+	color: var(--button-text-color);
+	outline: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	cursor: pointer;
+}
