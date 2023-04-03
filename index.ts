@@ -2,6 +2,7 @@ import fastify from "fastify";
 import * as dotenv from "dotenv";
 import { BindRoutes } from "./routes";
 import cors from "@fastify/cors";
+import "isomorphic-fetch";
 
 dotenv.config();
 
